@@ -1,0 +1,23 @@
+{
+  "name": "Sổ Tay AI Thực Chiến — Vingroup & VinUni",
+  "short_name": "AI Thực Chiến",
+  "description": "Trợ lý tra cứu thông tin tuyển sinh, sổ tay cẩm nang đào tạo và chuẩn SFIA chương trình Nhân tài AI Thực chiến",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

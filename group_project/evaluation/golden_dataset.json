@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Chương trình Đào tạo Nhân tài AI Thực chiến do những đơn vị nào phối hợp triển khai?",
+    "expected_answer": "Chương trình Đào tạo Nhân tài AI Thực chiến là chương trình đặc biệt do Tập đoàn Vingroup và Trường Đại học VinUni phối hợp triển khai.",
+    "expected_context": "Chương trình Đào tạo Nhân tài AI Thực chiến của Tập đoàn Vingroup phối hợp với Trường Đại học VinUni"
+  },
+  {
+    "question": "Mức phụ cấp sinh hoạt hàng tháng cho học viên tham gia chương trình là bao nhiêu?",
+    "expected_answer": "Học viên nhận khoản phụ cấp sinh hoạt cố định 8.000.000 VNĐ/tháng trong suốt 12 tuần đào tạo.",
+    "expected_context": "Nhận khoản phụ cấp sinh hoạt 8.000.000 VNĐ/tháng trong suốt 12 tuần đào tạo."
+  },
+  {
+    "question": "Học viên có phải đóng học phí khi tham gia chương trình AI in Action không?",
+    "expected_answer": "Học viên được miễn 100% học phí trong suốt thời gian tham gia chương trình do Tập đoàn Vingroup tài trợ.",
+    "expected_context": "Học viên được miễn 100% học phí trong suốt thời gian tham gia chương trình."
+  },
+  {
+    "question": "Lộ trình đào tạo 12 tuần của chương trình được chia thành mấy giai đoạn chính?",
+    "expected_answer": "Lộ trình gồm 2 giai đoạn: 03 tuần đầu xây dựng nền tảng tư duy và kỹ năng AI, và 09 tuần tiếp theo thực chiến với dự án AI thật tại doanh nghiệp.",
+    "expected_context": "03 tuần đầu: Nền tảng tư duy & kỹ năng AI hiện đại. 09 tuần tiếp theo: Thực chiến với dự án AI quy mô lớn."
+  },
+  {
+    "question": "Chương trình AI Thực chiến được thiết kế theo khung chuẩn năng lực quốc tế nào?",
+    "expected_answer": "Chương trình được thiết kế chuẩn hóa theo Khung năng lực SFIA (Skills Framework for the Information Age) và thang đo Bloom's Taxonomy.",
+    "expected_context": "Chương trình thiết kế theo khung năng lực SFIA (Chuẩn năng lực kỷ nguyên thông tin – Skills Framework for the Information Age)."
+  },
+  {
+    "question": "Điều kiện về tỷ lệ chuyên cần để học viên duy trì học bổng và phụ cấp là gì?",
+    "expected_answer": "Học viên phải đảm bảo tỷ lệ chuyên cần từ 90% trở lên trên toàn bộ các buổi học lý thuyết, lab thực hành và văn hóa học đường.",
+    "expected_context": "Đảm bảo tỷ lệ chuyên cần từ 90% trở lên, nộp bài tập/dự án đúng hạn và đạt đánh giá năng lực."
+  },
+  {
+    "question": "Quy trình ứng tuyển chương trình AI Thực chiến gồm những vòng nào?",
+    "expected_answer": "Quy trình gồm 3 vòng: Nộp hồ sơ trực tuyến, Bài thi Đánh giá Năng lực (ĐGNL) và Phỏng vấn chuyên sâu.",
+    "expected_context": "Quy trình ứng tuyển gồm 3 giai đoạn: Nộp hồ sơ trực tuyến, Bài thi Đánh giá Năng lực (ĐGNL), Phỏng vấn chuyên sâu."
+  },
+  {
+    "question": "Học viên tốt nghiệp có cơ hội làm việc tại những công ty nào trong hệ sinh thái Vingroup?",
+    "expected_answer": "Học viên có cơ hội được tuyển dụng trực tiếp vào các công ty công nghệ của Vingroup như VinFast, VinAI, VinBrain, VinBigData, VinES với mức lương hấp dẫn.",
+    "expected_context": "Cơ hội được tuyển dụng vào các P&L của Vingroup với mức lương đặc biệt hấp dẫn: VinFast, VinAI, VinBrain, VinBigData."
+  },
+  {
+    "question": "Học viên có được sử dụng các tiện ích cơ sở vật chất nào tại cơ sở Đại học VinUni?",
+    "expected_answer": "Học viên được cấp quyền truy cập miễn phí phòng Lab 24/7, Thư viện VinUni, phòng thể thao Gym và bể bơi tiêu chuẩn Olympic.",
+    "expected_context": "Học viên được cấp quyền truy cập miễn phí Thư viện VinUni, phòng thể thao Gym và bể bơi tiêu chuẩn Olympic."
+  },
+  {
+    "question": "Thủ tục pháp lý nào bắt buộc học viên phải hoàn tất trước khi nhập học?",
+    "expected_answer": "Học viên bắt buộc thực hiện định danh điện tử eKYC và ký thỏa thuận đào tạo cam kết trực tuyến.",
+    "expected_context": "Trước khi chính thức nhập học, học viên bắt buộc thực hiện định danh điện tử eKYC và ký thỏa thuận đào tạo trực tuyến."
+  },
+  {
+    "question": "Trong bài thi Đánh giá Năng lực (ĐGNL), những kiến thức toán nào được chú trọng ôn tập?",
+    "expected_answer": "Các kiến thức toán gồm Đại số tuyến tính (ma trận, vector), Giải tích (đạo hàm, gradient descent) và Xác suất thống kê cơ bản.",
+    "expected_context": "Toán cho AI: Đại số tuyến tính (ma trận, vector, tích vô hướng), Giải tích (đạo hàm, gradient descent), Xác suất thống kê cơ bản."
+  },
+  {
+    "question": "Theo khảo sát của nhóm Vinonymus, tỷ lệ học viên gặp khó khăn do tài liệu phân tán rải rác là bao nhiêu?",
+    "expected_answer": "Có 93% (76/82 học viên) khảo sát gặp khó khăn do tài liệu rải rác trên nhiều nền tảng như Discord, Zoom, VLearn, GitHub.",
+    "expected_context": "93% (76/82 học viên) gặp khó khăn do tài liệu rải rác đa nền tảng (Discord, Zoom, VLearn, GitHub)."
+  },
+  {
+    "question": "Giải pháp AI Mentor của nhóm Vinonymus đưa ra danh sách đề xuất gồm tối đa bao nhiêu đầu việc?",
+    "expected_answer": "Hệ thống AI Mentor đề xuất danh sách checklist tối đa 3 đầu việc trọng tâm (Checklist <= 3 tasks) phù hợp với số phút rảnh của học viên.",
+    "expected_context": "Đề xuất tối đa 3 đầu việc trọng tâm (Checklist <= 3 tasks) theo số phút rảnh mỗi ngày."
+  },
+  {
+    "question": "Cơ chế Guardrails của AI Mentor xử lý như thế nào khi học viên yêu cầu giải hộ bài tập hoặc xin đáp án?",
+    "expected_answer": "Hệ thống AI Mentor sẽ từ chối an toàn và yêu cầu học viên chủ động liên hệ Lab Coach để được hướng dẫn.",
+    "expected_context": "Đòi giải bài hộ / xin đáp án -> AI từ chối an toàn và yêu cầu liên hệ Lab Coach."
+  },
+  {
+    "question": "Chương trình AI Thực chiến có giới hạn học viên phải có nền tảng công nghệ thông tin từ trước không?",
+    "expected_answer": "Chương trình có hai mức độ: Cơ bản dành cho nhân viên tác nghiệp AI và Nâng cao dành cho chuyên gia, kỹ sư và lãnh đạo dự án.",
+    "expected_context": "Chương trình có hai mức độ: Cơ bản dành cho nhân viên tác nghiệp AI và Nâng cao dành cho chuyên gia, kỹ sư."
+  }
+]
