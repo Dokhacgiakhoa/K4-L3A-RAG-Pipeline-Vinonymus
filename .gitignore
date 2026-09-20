@@ -39,6 +39,8 @@ htmlcov/
 data/_tmp_pdf/
 
 # Temp / cache
+archive/excluded-national-policies/*.pdf
+tmp/pdfs/
 .pytest_cache/
 *.tmp
 *.log

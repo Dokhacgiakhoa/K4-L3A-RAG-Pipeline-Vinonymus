@@ -1,5 +1,17 @@
 # Day 8 — RAG Pipeline
 
+## Corpus của nhóm: Chương trình Nhân tài AI thực chiến VinUni
+
+Phạm vi là **mọi thông tin chính thống trực tiếp về chương trình**: tổng quan,
+đào tạo, tuyển sinh, quyền lợi và nghĩa vụ, FAQ, hoạt động, các khóa học và
+kết quả được đơn vị tổ chức công bố. Giữ nguyên tiêu đề bài nguồn dù có chữ
+“tuyển sinh”; không đổi nội dung gốc thành một chủ đề khác.
+
+Danh sách nguồn, quy tắc lọc và giới hạn hiện tại: [Corpus sources](docs/CORPUS_SOURCES.md).
+Ba PDF chính sách quốc gia đã được đưa ra khỏi corpus vì không quy định trực tiếp
+chương trình. Hiện chỉ xác minh được một PDF riêng của chương trình; mốc ba tài
+liệu chính sách của bài tập **chưa đạt**. Không dùng tài liệu ngoài phạm vi để bù số lượng.
+
 ## Mục tiêu
 
 Mỗi nhóm xây dựng một chatbot RAG trả lời câu hỏi từ bộ tài liệu do nhóm thu thập. Sản phẩm phải có hybrid retrieval, citation, giao diện chat và báo cáo đánh giá.
