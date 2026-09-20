@@ -11,12 +11,12 @@
 
 | Module/deliverable | Việc tôi trực tiếp làm | File/commit/PR | Trạng thái |
 |---|---|---|---|
-| Data Collection (Task 1 & 2) | Thu thập và chuẩn hóa 3 PDF chính thức (20K AI Handbook v2.1, AI Mentor Blueprint, Demo Slides) và 6 bài JSON từ AIIA-Notebook | `src/task1_collect_legal_docs.py`, `src/task2_crawl_news.py` | Done |
+| Data Collection (Task 1 & 2) | Thu thập và xử lý văn bản quy chế chính thức: Sổ tay đào tạo Nhân tài AI v2.1 (15MB do VinUni ban hành) và 6 bài viết tin tức JSON từ cẩm nang tuyển sinh | `src/task1_collect_legal_docs.py`, `src/task2_crawl_news.py` | Done |
 | Markdown Standardization (Task 3) | Lập trình trích xuất văn bản pypdfium2 và chuẩn hóa Markdown | `src/task3_convert_markdown.py` | Done |
-| Chunking & ChromaDB Indexing (Task 4) | Phân đoạn RecursiveCharacterTextSplitter (chunk_size=500, overlap=50), embedding và nạp ChromaDB với cosine distance | `src/task4_chunking_indexing.py` | Done |
+| Chunking & ChromaDB Indexing (Task 4) | Phân đoạn RecursiveCharacterTextSplitter (chunk_size=500, overlap=50), embedding và nạp ChromaDB với cosine distance (tổng cộng 123 chunks) | `src/task4_chunking_indexing.py` | Done |
 | Hybrid Retrieval & RRF (Task 5, 6, 7) | Lập trình Dense Search, BM25 chuẩn Lucene chống IDF=0 và thuật toán Reciprocal Rank Fusion k=60 | `src/task5_semantic_search.py`, `src/task6_lexical_search.py`, `src/task7_reranking.py` | Done |
 | Fallback & Generation with Citation (Task 8, 9, 10) | Tích hợp PageIndex fallback khi dense score < 0.35, Lost-in-the-middle context reorder và sinh phản hồi với Google Gemini kèm trích dẫn nguồn | `src/task8_pageindex_vectorless.py`, `src/task9_retrieval_pipeline.py`, `src/task10_generation.py` | Done |
-| UI & Presentation | Xây dựng giao diện Next.js 15 PWA installable, FastAPI backend và bộ Slide HTML tương tác 6 trang | `frontend/`, `api.py`, `app.py`, `slides/index.html` | Done |
+| UI & Presentation | Xây dựng bộ Slide HTML 10 trang chuẩn báo cáo kỹ thuật tích hợp Live Demo 2 cột (Chat tương tác & AI Pipeline Trace), FastAPI backend và Streamlit app | `slides/index.html`, `api.py`, `app.py` | Done |
 | Evaluation & Golden Dataset | Xây dựng 15 cặp Q&A thực tế, chạy benchmark 4 metrics và viết báo cáo đánh giá hoàn chỉnh | `group_project/evaluation/golden_dataset.json`, `group_project/evaluation/RESULT.md` | Done |
 
 ## Quyết định kỹ thuật quan trọng

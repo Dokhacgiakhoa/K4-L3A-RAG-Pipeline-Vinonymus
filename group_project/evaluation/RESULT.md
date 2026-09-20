@@ -9,7 +9,7 @@
 | Evaluator model                    | Google Gemini 3.6 Flash |
 | Generator model                    | Google Gemini 3.6 Flash |
 | Embedding model                    | sentence-transformers/all-MiniLM-L6-v2 |
-| Corpus version/commit              | VinUni AI in Action Handbook v2.1 & Vinonymus Blueprint |
+| Corpus version/commit              | VinUni AI in Action Handbook v2.1 (15.0MB Official PDF) & Admissions News |
 | Golden dataset size                | 15 Q&A test cases |
 | `top_k`                            | 5 |
 | Fallback threshold and calibration | Cosine score threshold = 0.35 (calibrated with in-domain & out-of-domain queries) |
