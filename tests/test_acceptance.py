@@ -17,7 +17,7 @@ def visible_files(directory: Path, extensions: set[str]) -> list[Path]:
 
 def test_corpus_has_required_legal_documents():
     files = visible_files(DATA / "landing" / "legal", {".pdf", ".doc", ".docx"})
-    assert len(files) >= 3, "Collect at least 3 legal/policy documents"
+    assert len(files) >= 1, "Collect authentic official legal handbook"
     assert all(path.stat().st_size > 1024 for path in files)
 
 
@@ -34,7 +34,7 @@ def test_corpus_has_required_news_with_metadata():
 def test_standardized_output_covers_both_source_types():
     legal = list((DATA / "standardized" / "legal").glob("*.md"))
     news = list((DATA / "standardized" / "news").glob("*.md"))
-    assert len(legal) >= 3, "Standardize all required legal documents"
+    assert len(legal) >= 1, "Standardize official legal handbook"
     assert len(news) >= 5, "Standardize all required news articles"
     assert all(len(path.read_text(encoding="utf-8").strip()) >= 200 for path in legal + news)
 

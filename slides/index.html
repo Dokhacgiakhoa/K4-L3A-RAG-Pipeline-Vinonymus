@@ -241,19 +241,19 @@
         <div class="glass-card p-3.5 rounded-2xl border-l-4 border-l-blue-500 space-y-1.5">
           <div class="flex items-center justify-between">
             <h4 class="font-heading font-bold text-white text-[0.8125rem] flex items-center gap-1.5">
-              <i class="fa-solid fa-file-pdf text-red-400"></i> 3 Legal PDFs (VinUni)
+              <i class="fa-solid fa-file-pdf text-red-400"></i> 1 Legal PDF (VinUni)
             </h4>
             <span class="text-[0.625rem] bg-blue-500/20 text-blue-300 px-1.5 py-0.5 rounded font-mono font-semibold">PR #1</span>
           </div>
           <ul class="space-y-1 text-[0.6875rem] text-slate-300">
             <li class="bg-slate-900/60 p-1.5 rounded border border-slate-800">
-              <strong class="text-white">20k-ai-handbook-ver2.1.pdf:</strong> 22 trang quy chế: học bổng 100%, phụ cấp 8 triệu, chuyên cần 90%, cam kết việc làm VinFast/VinAI.
+              <strong class="text-white">20k-ai-handbook-ver2.1.pdf:</strong> Sổ tay đào tạo chính thức (15MB, 22 trang do VinUni ban hành): Học bổng 100%, trợ cấp 8 triệu, chuyên cần 90%, cam kết việc làm VinFast/VinAI.
             </li>
             <li class="bg-slate-900/60 p-1.5 rounded border border-slate-800">
-              <strong class="text-white">chinh-sach-tuyen-sinh.pdf:</strong> Điều kiện dự tuyển khóa cơ bản & khóa 2-3, quyền lợi tài trợ, nghĩa vụ học viên.
+              <strong class="text-white">Trích xuất nguyên bản:</strong> Dùng <code>pypdfium2</code> bóc tách text layer trực tiếp từ file PDF gốc, không can thiệp hay chế tác dữ liệu.
             </li>
             <li class="bg-slate-900/60 p-1.5 rounded border border-slate-800">
-              <strong class="text-white">lich-su-trien-khai.pdf:</strong> Lịch sử khai giảng, kỳ thi ĐGNL 3 ngày, mô hình đào tạo 3+3+6 tại doanh nghiệp.
+              <strong class="text-white">Quy chuẩn pháp quy:</strong> Văn bản pháp lý nền tảng duy nhất của chương trình Nhân tài AI Thực chiến.
             </li>
           </ul>
         </div>
@@ -310,7 +310,7 @@
           <span class="text-emerald-400 font-mono font-bold">100% Pass Acceptance Tests</span>
         </div>
         <p class="text-slate-400 text-[0.6875rem]">
-          Sử dụng <code>pypdfium2</code> trích xuất text layer trực tiếp từ PDF. Metadata Header Injection (Title, Source, Date) gắn trực tiếp vào đầu mỗi file Markdown. Nghiệm thu: 3 Legal MD (>44k ký tự) + 6 News MD (>23k ký tự) + 10 Facebook MD.
+          Sử dụng <code>pypdfium2</code> trích xuất text layer trực tiếp từ PDF. Metadata Header Injection (Title, Source, Date) gắn trực tiếp vào đầu mỗi file Markdown. Nghiệm thu: 1 Legal MD (26,143 ký tự) + 6 News MD (>23k ký tự) + 10 Facebook MD.
         </p>
       </div>
     </section>
@@ -365,7 +365,7 @@
           </div>
           <h4 class="font-heading font-bold text-white text-[0.875rem]">ChromaDB Persistent Store</h4>
           <p class="text-[0.75rem] text-slate-300 leading-relaxed">
-            Lưu trữ lâu dài tại <code>chroma_db/</code> với tổng cộng <strong>165 chunks</strong> giàu metadata.
+            Lưu trữ lâu dài tại <code>chroma_db/</code> với tổng cộng <strong>123 chunks</strong> giàu metadata.
           </p>
           <div class="bg-slate-950 p-2 rounded-lg text-[0.6875rem] font-mono text-slate-300 border border-slate-800">
             Metadata: {doc_id, title, source,<br/>
@@ -405,7 +405,7 @@
             <i class="fa-solid fa-circle-nodes text-blue-400"></i> Dense Vector Search
           </h4>
           <p class="text-[0.75rem] text-slate-300">
-            Truy vấn theo ngữ nghĩa trừu tượng thông qua Cosine Similarity giữa embedding query và 165 vector trong ChromaDB.
+            Truy vấn theo ngữ nghĩa trừu tượng thông qua Cosine Similarity giữa embedding query và 123 vector trong ChromaDB.
           </p>
           <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 text-[0.6875rem] space-y-1">
             <div class="text-blue-300 font-bold">Ưu thế:</div>

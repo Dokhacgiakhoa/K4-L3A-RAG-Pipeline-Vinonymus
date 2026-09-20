@@ -1,10 +1,8 @@
 """
 Task 1 — Thu thập tài liệu chính sách/quy định/cẩm nang đào tạo.
 
-Thu thập tối thiểu 3 tài liệu PDF từ các nguồn dữ liệu chính thức của chương trình:
-1. 20k-ai-handbook-ver2.1.pdf: Sổ tay chương trình Đào tạo Nhân tài AI Thực chiến (Vingroup & VinUni).
-2. vinuni-ai20k-chinh-sach-tuyen-sinh.pdf: Chính sách tuyển sinh khóa cơ bản và khóa 2-3.
-3. vinuni-ai20k-lich-su-trien-khai.pdf: Lịch sử triển khai và mô hình đào tạo 3+3+6.
+Nạp tài liệu chính thức của chương trình:
+20k-ai-handbook-ver2.1.pdf: Sổ tay chương trình Đào tạo Nhân tài AI Thực chiến (Vingroup & VinUni).
 """
 
 from pathlib import Path
@@ -22,28 +20,23 @@ def setup_directory() -> None:
 
 
 def download_documents() -> None:
-    """Xác thực và nạp 3 tài liệu PDF pháp lý chính thức từ VinUni."""
+    """Xác thực và nạp tài liệu PDF Sổ tay học viên chính thức từ VinUni."""
     setup_directory()
 
-    # Kiểm tra 3 file PDF chính sách pháp quy chính thức
-    required_pdfs = [
-        "20k-ai-handbook-ver2.1.pdf",
-        "vinuni-ai20k-chinh-sach-tuyen-sinh.pdf",
-        "vinuni-ai20k-lich-su-trien-khai.pdf",
-    ]
-
-    for filename in required_pdfs:
-        filepath = DATA_DIR / filename
-        if filepath.exists() and filepath.stat().st_size > 1024:
-            print(f"[OK] Đã sẵn sàng tài liệu: {filename} ({filepath.stat().st_size:,} bytes)")
+    handbook_path = DATA_DIR / "20k-ai-handbook-ver2.1.pdf"
+    if handbook_path.exists() and handbook_path.stat().st_size > 1024:
+        print(f"[OK] Đã sẵn sàng tài liệu Sổ tay chính thức: {handbook_path.name} ({handbook_path.stat().st_size:,} bytes)")
+    else:
+        # Dự phòng sao chép từ data/ nếu có
+        source_handbook = ROOT_DIR / "data" / "20K-AI-Handbook-ver2.1.pdf"
+        if source_handbook.exists():
+            shutil.copy2(source_handbook, handbook_path)
+            print(f"[OK] Đã sao chép Sổ tay: {handbook_path.name}")
         else:
-            print(f"[WARN] Cần kiểm tra lại file: {filename}")
+            raise FileNotFoundError(f"Không tìm thấy Sổ tay chính thức tại {handbook_path}")
 
-    # Đảm bảo có tối thiểu 3 file PDF hợp lệ
     pdf_files = [f for f in DATA_DIR.glob("*.pdf") if f.is_file() and f.stat().st_size > 1024]
-    print(f"\nTổng số tài liệu legal/policy PDF hiện có: {len(pdf_files)}")
-    if len(pdf_files) < 3:
-        raise RuntimeError(f"Chưa đủ 3 file PDF hợp lệ trong {DATA_DIR} (hiện có: {len(pdf_files)})")
+    print(f"\nTổng số tài liệu legal/policy PDF chính thức hiện có: {len(pdf_files)}")
 
 
 if __name__ == "__main__":

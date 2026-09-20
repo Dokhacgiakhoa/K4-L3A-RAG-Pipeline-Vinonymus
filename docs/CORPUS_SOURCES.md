@@ -14,9 +14,7 @@ Corpus bao gồm toàn bộ dữ liệu văn bản chính thống liên quan đ�
 
 | Tên File | Dung Lượng | Nguồn Gốc Xuất Xứ | Nội Dung Cốt Lõi |
 |---|:---:|---|---|
-| `20k-ai-handbook-ver2.1.pdf` | ~15.0 MB | [VinUni 20K AI Handbook v2.1](https://vinuni.edu.vn/aithucchien/wp-content/uploads/2026/06/20K-AI-Handbook-ver2.1.pdf) | 22 trang quy chế chính thức: Tài trợ học bổng 100%, trợ cấp sinh hoạt 8.000.000 VNĐ/tháng, điều kiện duy trì chuyên cần &ge; 90%, cam kết làm việc tại VinFast/VinAI. |
-| `vinuni-ai20k-chinh-sach-tuyen-sinh.pdf` | ~8.9 KB | Cổng tuyển sinh VinUni AI in Action | Chính sách tuyển sinh khóa cơ bản & khóa 2-3: điều kiện dự tuyển, nghĩa vụ học viên và quyền lợi tài trợ. |
-| `vinuni-ai20k-lich-su-trien-khai.pdf` | ~7.4 KB | Cổng thông tin chính thức VinUni | Lịch sử khai giảng các khóa đào tạo, kỳ thi ĐGNL 3 ngày và mô hình học tập thực chiến 3+3+6 tại doanh nghiệp. |
+| `20k-ai-handbook-ver2.1.pdf` | ~15.0 MB | [VinUni 20K AI Handbook v2.1](https://vinuni.edu.vn/aithucchien/wp-content/uploads/2026/06/20K-AI-Handbook-ver2.1.pdf) | Văn bản quy chế đào tạo chính thức và duy nhất do VinUni ban hành (22 trang): Tài trợ học bổng 100%, trợ cấp sinh hoạt 8.000.000 VNĐ/tháng, điều kiện duy trì chuyên cần &ge; 90%, cam kết làm việc tại VinFast/VinAI. |
 
 ### B. Bài Viết & Cẩm Nang Tuyển Sinh (`data/landing/news/`)
 

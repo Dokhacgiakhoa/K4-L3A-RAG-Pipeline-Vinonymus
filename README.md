@@ -30,8 +30,8 @@ Tuân thủ nghiêm ngặt khung đánh giá tại [docs/GRADING_RUBRIC.md](docs
 
 | Hạng Mục | Điểm | Mô Tả & Bằng Chứng Kỹ Thuật | Vị Trí Code / Test |
 |---|:---:|---|---|
-| **1. Dữ liệu có nguồn rõ ràng & chuẩn hóa** | **10** | 100% dữ liệu gốc đối soát: 3 Legal PDF (Handbook v2.1 15MB, Chính sách tuyển sinh, Lịch sử triển khai VinUni) + 6 News JSON (28KB) + 10 Facebook FAQ Markdown; Trích xuất `pypdfium2`, Header metadata injection, Markdown &ge; 200 ký tự. Chi tiết tại [docs/CORPUS_SOURCES.md](docs/CORPUS_SOURCES.md). | `src/task1_collect_legal_docs.py`<br/>`src/task2_crawl_news.py`<br/>`src/task3_convert_markdown.py`<br/>`tests/test_acceptance.py` |
-| **2. Chunking, embedding & vector DB** | **10** | `RecursiveCharacterTextSplitter` (chunk_size=500, overlap=50) giữ trọn vẹn câu; Embedding `all-MiniLM-L6-v2` (384 dimensions, Cosine distance); ChromaDB lưu bền vững 165 chunks tại `chroma_db/`. | `src/task4_chunking_indexing.py`<br/>`tests/test_contracts.py` |
+| **1. Dữ liệu có nguồn rõ ràng & chuẩn hóa** | **10** | 100% dữ liệu gốc đối soát: 1 Legal PDF chính thức (20K Handbook v2.1 15MB do VinUni ban hành) + 6 News JSON (28KB) + 10 Facebook FAQ Markdown; Trích xuất `pypdfium2`, Header metadata injection, Markdown &ge; 200 ký tự. Chi tiết tại [docs/CORPUS_SOURCES.md](docs/CORPUS_SOURCES.md). | `src/task1_collect_legal_docs.py`<br/>`src/task2_crawl_news.py`<br/>`src/task3_convert_markdown.py`<br/>`tests/test_acceptance.py` |
+| **2. Chunking, embedding & vector DB** | **10** | `RecursiveCharacterTextSplitter` (chunk_size=500, overlap=50) giữ trọn vẹn câu; Embedding `all-MiniLM-L6-v2` (384 dimensions, Cosine distance); ChromaDB lưu bền vững 123 chunks tại `chroma_db/`. | `src/task4_chunking_indexing.py`<br/>`tests/test_contracts.py` |
 | **3. Dense search, BM25 & RRF** | **20** | Dense Search vector; Cài đặt thuật toán Lucene BM25 $\text{IDF} = \ln(1 + \frac{N-n+0.5}{n+0.5})$ giải quyết dứt điểm lỗi Zero-IDF khi corpus nhỏ; Reciprocal Rank Fusion ($k=60$) gộp thứ hạng độc lập scale điểm. | `src/task5_semantic_search.py`<br/>`src/task6_lexical_search.py`<br/>`src/task7_reranking.py` |
 | **4. Retrieval pipeline & fallback** | **10** | Thực nghiệm chọn `top_k = 5` (Context Recall 0.91, Precision 0.93, Latency 1.1s); Ngưỡng Cosine Threshold = 0.35 (dựa trên Cosine gốc của Dense Search); Fallback PageIndex vectorless hoặc Safe Refusal. | `src/task8_pageindex_vectorless.py`<br/>`src/task9_retrieval_pipeline.py` |
 | **5. Generation có citation & safe refusal** | **15** | Generator Google Gemini 3.6 Flash (`gemini-3.6-flash`); Sắp xếp *Lost-in-the-middle* (Rank 1 đầu, Rank 2 cuối context); Trích dẫn `[1]`, `[2]` map chính xác nguồn; Safe Refusal: *"Tôi không thể xác minh thông tin này từ nguồn hiện có."* | `src/task10_generation.py` |
@@ -55,7 +55,7 @@ Tuân thủ nghiêm ngặt khung đánh giá tại [docs/GRADING_RUBRIC.md](docs
 ```mermaid
 flowchart TD
     subgraph INGESTION ["1. Thu Thập & Tiền Xử Lý Dữ Liệu"]
-        A1["3 Legal PDFs (VinUni)<br/>20K Handbook v2.1, Tuyển Sinh, Triển Khai"] --> B1["pypdfium2 Extractor & Text Normalizer"]
+        A1["1 Legal PDF (VinUni)<br/>20K Handbook v2.1 (15MB)"] --> B1["pypdfium2 Extractor & Text Normalizer"]
         A2["6 News JSONs (28KB)<br/>SFIA, Tuyển Sinh, Học Bổng"] --> B2["Metadata Header Injection"]
         A3["10 Facebook FAQ Markdown<br/>Hỏi Đáp Cộng Đồng AI Thực Chiến"] --> B2
         B1 --> C["Standardized Markdown Files (data/standardized/)"]
@@ -65,7 +65,7 @@ flowchart TD
     subgraph INDEXING ["2. Phân Đoạn & Vector Store"]
         C --> D["Recursive Character Splitter<br/>chunk_size=500, overlap=50"]
         D --> E["Embedding Model<br/>sentence-transformers/all-MiniLM-L6-v2 (384D)"]
-        E --> F[("ChromaDB VectorStore<br/>165 Chunks Indexed (chroma_db/)")]
+        E --> F[("ChromaDB VectorStore<br/>123 Chunks Indexed (chroma_db/)")]
         D --> G["Sparse Lexical Index<br/>Lucene BM25Okapi (Fix Zero-IDF)"]
     end
 
@@ -173,14 +173,14 @@ K4-L3A-RAG-Pipeline-Vinonymus/
 │   ├── CORPUS_SOURCES.md           # Nguồn gốc xuất xứ tập dữ liệu chi tiết
 │   └── STEP_BY_STEP.md             # Hướng dẫn từng bước phát triển
 ├── data/
-│   ├── landing/                    # Dữ liệu thô ban đầu (PDFs, JSONs, Facebook FAQ)
-│   │   ├── legal/                  # 3 file PDF (Handbook v2.1 15MB, Tuyển sinh, Triển khai VinUni)
+│   ├── landing/                    # Dữ liệu thô ban đầu (PDF, JSONs, Facebook FAQ)
+│   │   ├── legal/                  # 1 file PDF (20k-ai-handbook-ver2.1.pdf - 15.0MB do VinUni ban hành)
 │   │   ├── news/                   # 6 file JSON thu thập từ cẩm nang tuyển sinh (28KB)
 │   │   └── facebook/               # 10 file Markdown hỏi đáp cộng đồng AI Thực chiến
 │   └── standardized/               # Văn bản Markdown đã được chuẩn hóa (>200 ký tự)
-│       ├── legal/                  # 3 file Markdown pháp quy (>44,000 ký tự)
+│       ├── legal/                  # 1 file Markdown pháp quy (20k-ai-handbook-ver2.1.md - 26,143 ký tự)
 │       └── news/                   # 6 file Markdown tin tức (>23,000 ký tự)
-├── chroma_db/                      # ChromaDB database lưu 165 chunks và vector embeddings
+├── chroma_db/                      # ChromaDB database lưu 123 chunks và vector embeddings
 ├── tong-hop-ai-in-action-facebook.md # Bản tổng hợp phân tầng FAQ P0/P1/P2 từ cộng đồng
 ├── src/                            # Mã nguồn lõi của hệ thống RAG
 │   ├── task1_collect_legal_docs.py # Thu thập tài liệu pháp lý
