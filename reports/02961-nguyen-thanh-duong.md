@@ -3,7 +3,7 @@
 ## Thông tin
 
 - Họ và tên: Nguyễn Thành Dương
-- Mã học viên: 2A202602961
+- Mã học viên: 02961
 - Nhóm: Vinonymus (K4-3A-E403)
 - Repository/branch: `https://github.com/Dokhacgiakhoa/K4-L3A-RAG-Pipeline-Vinonymus/tree/feat/collect-standardize-ai20k-corpus`
 

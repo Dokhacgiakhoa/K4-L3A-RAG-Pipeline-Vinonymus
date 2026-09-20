@@ -3,7 +3,7 @@
 ## Thông tin
 
 - Họ và tên: Trần Nhật Minh
-- Mã học viên: 2A202602483
+- Mã học viên: 02483
 - Nhóm: Vinonymus (K4-3A-E403)
 - Repository/branch: `https://github.com/Dokhacgiakhoa/K4-L3A-RAG-Pipeline-Vinonymus/tree/minh`
 

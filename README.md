@@ -17,8 +17,8 @@ Dự án được xây dựng và hoàn thiện bởi **3 thành viên** thuộc
 | STT | Họ và Tên | Mã Học Viên | GitHub | Vai Trò Chính | Báo Cáo Cá Nhân |
 |:---:|---|:---:|:---:|---|:---:|
 | 1 | **Đỗ Khắc Gia Khoa** *(Lead)* | `02733` | [@Dokhacgiakhoa](https://github.com/Dokhacgiakhoa) | **Project Lead & RAG Core Architect**: Thiết kế kiến trúc Hybrid RRF, Lucene BM25, Lost-in-the-middle context reorder, Gemini Generation with Citations, FastAPI backend & Interactive Slide Trace. | [Báo cáo 02733](reports/02733-do-khac-gia-khoa.md) |
-| 2 | **Trần Nhật Minh** | `2A202602483` | [@minh-tran-2611](https://github.com/minh-tran-2611) | **Community FAQ & Social Data Collection**: Thu thập, bóc tách và phân tầng dữ liệu hỏi đáp tuyển sinh/lộ trình từ Group Facebook Cộng đồng AI Thực chiến VinUni (10 bài Markdown kèm permalinks và ảnh minh chứng, PR #2). | [Báo cáo Minh](reports/2a202602483-tran-nhat-minh.md) |
-| 3 | **Nguyễn Thành Dương** | `2A202602961` | [@duongk18FPTU](https://github.com/duongk18FPTU) | **Legal Corpus & Markdown Standardization**: Thu thập văn bản quy chế đào tạo Sổ tay v2.1, chính sách tuyển sinh, chuẩn hóa Markdown xử lý triệt để lỗi UTF-8 encoding tiếng Việt có dấu và viết test chất lượng dữ liệu (PR #1). | [Báo cáo Dương](reports/2a202602961-nguyen-thanh-duong.md) |
+| 2 | **Trần Nhật Minh** | `02483` | [@minh-tran-2611](https://github.com/minh-tran-2611) | **Community FAQ & Social Data Collection**: Thu thập, bóc tách và phân tầng dữ liệu hỏi đáp tuyển sinh/lộ trình từ Group Facebook Cộng đồng AI Thực chiến VinUni (10 bài Markdown kèm permalinks và ảnh minh chứng, PR #2). | [Báo cáo Minh](reports/02483-tran-nhat-minh.md) |
+| 3 | **Nguyễn Thành Dương** | `02961` | [@duongk18FPTU](https://github.com/duongk18FPTU) | **Legal Corpus & Markdown Standardization**: Thu thập văn bản quy chế đào tạo Sổ tay v2.1, chính sách tuyển sinh, chuẩn hóa Markdown xử lý triệt để lỗi UTF-8 encoding tiếng Việt có dấu và viết test chất lượng dữ liệu (PR #1). | [Báo cáo Dương](reports/02961-nguyen-thanh-duong.md) |
 
 ---
 
@@ -199,8 +199,8 @@ K4-L3A-RAG-Pipeline-Vinonymus/
 │       └── RESULT.md               # Báo cáo đánh giá 4 metrics Ragas & A/B testing
 ├── reports/                        # Báo cáo đóng góp cá nhân độc lập của 3 thành viên
 │   ├── 02733-do-khac-gia-khoa.md
-│   ├── 2a202602483-tran-nhat-minh.md
-│   └── 2a202602961-nguyen-thanh-duong.md
+│   ├── 02483-tran-nhat-minh.md
+│   └── 02961-nguyen-thanh-duong.md
 ├── slides/                         # Bộ Slide HTML trình chiếu trực quan
 │   └── index.html                  # 10 slide tương tác tích hợp Live Demo 2 cột
 └── tests/                          # Bộ kiểm thử tự động (20 tests)
