@@ -109,20 +109,19 @@
     <!-- Slide Tabs: Tinh gọn, hiển thị số thứ tự & tiêu đề ngắn gọn -->
     <div class="flex items-center space-x-2">
       <div class="hidden lg:flex items-center bg-slate-900/90 p-1 rounded-xl border border-slate-800 text-[0.6875rem]">
-        <button onclick="goToSlide(0)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-blue-400 bg-blue-500/15 border border-blue-500/30 shadow-sm">01 Project & Team</button>
-        <button onclick="goToSlide(1)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">02 Khung Điểm</button>
-        <button onclick="goToSlide(2)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">03 Dữ Liệu [10đ]</button>
-        <button onclick="goToSlide(3)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">04 Vector DB [10đ]</button>
-        <button onclick="goToSlide(4)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">05 RRF [20đ]</button>
-        <button onclick="goToSlide(5)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">06 Pipeline [10đ]</button>
-        <button onclick="goToSlide(6)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">07 Citation [15đ]</button>
-        <button onclick="goToSlide(7)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">08 Evaluation [10đ]</button>
-        <button onclick="goToSlide(8)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">09 Bonus [+10đ]</button>
-        <button onclick="goToSlide(9)" class="tab-btn px-2.5 py-1 rounded-lg font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/25 hover:bg-emerald-500/20">10 Live Demo</button>
-        <button onclick="goToSlide(10)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">11 Cảm Ơn</button>
+        <button onclick="goToSlide(0)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-blue-400 bg-blue-500/15 border border-blue-500/30 shadow-sm">01 Dự Án & Team</button>
+        <button onclick="goToSlide(1)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">02 Nguồn Dữ Liệu</button>
+        <button onclick="goToSlide(2)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">03 Vector Store</button>
+        <button onclick="goToSlide(3)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">04 Hybrid RRF</button>
+        <button onclick="goToSlide(4)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">05 Pipeline & Top_K</button>
+        <button onclick="goToSlide(5)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">06 Generation & Citations</button>
+        <button onclick="goToSlide(6)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">07 Đánh Giá & Benchmark</button>
+        <button onclick="goToSlide(7)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">08 Kỹ Thuật Mở Rộng</button>
+        <button onclick="goToSlide(8)" class="tab-btn px-2.5 py-1 rounded-lg font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/25 hover:bg-emerald-500/20">09 Live Demo</button>
+        <button onclick="goToSlide(9)" class="tab-btn px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white">10 Cảm Ơn</button>
       </div>
 
-      <span id="slide-counter" class="text-[0.75rem] font-bold text-slate-300 bg-slate-900/90 px-2.5 py-1 rounded-lg border border-slate-800 font-mono">1 / 11</span>
+      <span id="slide-counter" class="text-[0.75rem] font-bold text-slate-300 bg-slate-900/90 px-2.5 py-1 rounded-lg border border-slate-800 font-mono">1 / 10</span>
       <div class="flex space-x-1">
         <button onclick="prevSlide()" title="Phím mũi tên trái" class="p-1.5 px-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 transition">
           <i class="fa-solid fa-chevron-left text-xs"></i>
@@ -217,91 +216,22 @@
             <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-200 font-mono">RRF (k=60)</span>
             <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-200 font-mono">Gemini 3.6 Flash</span>
           </div>
-          <button onclick="goToSlide(9)" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1.5 transition">
+          <button onclick="goToSlide(8)" class="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1.5 transition">
             Xem Màn Hình Live Demo (2 Cột) <i class="fa-solid fa-arrow-right text-xs"></i>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SLIDE 2: BẢNG KHUNG ĐIỂM (RUBRIC MAPPING) ==================== -->
+    <!-- ==================== SLIDE 2: NGUỒN DỮ LIỆU & CHUẨN HÓA ==================== -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2.5">
           <span class="w-7 h-7 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">02</span>
-          <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Bảng Đối Soát Khung Điểm Giảng Viên (90đ + 10đ Bonus)</h3>
-        </div>
-        <span class="text-[0.75rem] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-          100% Hoàn Thiện
-        </span>
-      </div>
-      <p class="text-slate-400 text-[0.8125rem]">Hệ thống được thiết kế bám sát 100% từng tiêu chí chấm điểm trong <code>docs/GRADING_RUBRIC.md</code>, có test chứng minh và demo thực tế.</p>
-
-      <div class="glass-card p-4 rounded-2xl space-y-3">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 text-[0.75rem]">
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">1. Dữ liệu chuẩn hóa</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">10 / 10 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">3 Legal PDF + 6 News JSON</div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">2. Chunking & ChromaDB</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">10 / 10 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">Recursive Split + 384 Dim</div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">3. Dense, BM25 & RRF</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">20 / 20 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">Lucene BM25 chống Zero-IDF</div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">4. Pipeline & Fallback</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">10 / 10 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">Top_K=5, Cosine th=0.35</div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">5. Citation & Refusal</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">15 / 15 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">Gemini 3.6, [1][2], Refusal</div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">6. Chatbot End-to-End</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">10 / 10 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">FastAPI backend + Live UI</div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">7. Golden Eval & A/B</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">10 / 10 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">15 Golden Cases, 4 Metrics</div>
-          </div>
-          <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-800">
-            <div class="text-slate-400 font-medium">8. Khả Năng Tái Lập</div>
-            <div class="font-bold text-emerald-400 font-mono text-[0.875rem] mt-0.5">5 / 5 điểm</div>
-            <div class="text-[0.6875rem] text-slate-500">pytest 20/20, MSHV 02733</div>
-          </div>
-        </div>
-
-        <div class="p-3 rounded-xl bg-gradient-to-r from-amber-500/10 via-purple-500/10 to-blue-500/10 border border-amber-500/25 flex flex-wrap items-center justify-between gap-2 text-[0.75rem]">
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
-            <span class="text-white font-bold">Hạng Mục Bonus Tối Đa:</span>
-            <span class="text-amber-300 font-semibold font-mono">+10 / 10 Điểm</span>
-            <span class="text-slate-400">(HyDE +3, Reranker vs RRF +3, Memory +2, UI Highlighting +2)</span>
-          </div>
-          <div class="text-emerald-400 font-mono font-bold">Tổng Điểm Mục Tiêu: 100 / 100 Điểm</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== SLIDE 3: NGUỒN DỮ LIỆU & CHUẨN HÓA (10 ĐIỂM) ==================== -->
-    <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-2.5">
-          <span class="w-7 h-7 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">03</span>
           <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Dữ Liệu Có Nguồn Rõ Ràng & Được Chuẩn Hóa</h3>
         </div>
-        <span class="text-[0.75rem] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-          Rubric: 10 Điểm
+        <span class="text-[0.75rem] font-bold text-blue-400 bg-blue-500/10 px-2.5 py-0.5 rounded-full border border-blue-500/25">
+          Corpus Đa Nguồn Thật
         </span>
       </div>
       <p class="text-slate-400 text-[0.8125rem]">100% dữ liệu gốc thật từ chương trình đào tạo VinUni AI in Action và Group Cộng đồng học viên, không sử dụng dữ liệu giả lập.</p>
@@ -385,15 +315,15 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 4: CHUNKING & CHROMADB (10 ĐIỂM) ==================== -->
+    <!-- ==================== SLIDE 3: CHUNKING & CHROMADB ==================== -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2.5">
-          <span class="w-7 h-7 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">04</span>
+          <span class="w-7 h-7 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">03</span>
           <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Chunking, Embedding & Vector Database</h3>
         </div>
-        <span class="text-[0.75rem] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-          Rubric: 10 Điểm
+        <span class="text-[0.75rem] font-bold text-purple-400 bg-purple-500/10 px-2.5 py-0.5 rounded-full border border-purple-500/25">
+          ChromaDB & 384D
         </span>
       </div>
       <p class="text-slate-400 text-[0.8125rem]">Chiến lược phân đoạn ngữ nghĩa và lưu trữ đa chiều trong cơ sở dữ liệu vector ChromaDB.</p>
@@ -456,15 +386,15 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 5: DENSE, BM25 & RRF (20 ĐIỂM) ==================== -->
+    <!-- ==================== SLIDE 4: DENSE, BM25 & RRF ==================== -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2.5">
-          <span class="w-7 h-7 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">05</span>
+          <span class="w-7 h-7 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">04</span>
           <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Dense Search, BM25 Lucene & Thuật Toán RRF</h3>
         </div>
-        <span class="text-[0.75rem] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-          Rubric: 20 Điểm
+        <span class="text-[0.75rem] font-bold text-pink-400 bg-pink-500/10 px-2.5 py-0.5 rounded-full border border-pink-500/25">
+          Hybrid Search & RRF
         </span>
       </div>
       <p class="text-slate-400 text-[0.8125rem]">Kết hợp sức mạnh giữa Dense Vector và Sparse Lexical Search, triệt tiêu sự chênh lệch phân phối điểm.</p>
@@ -527,15 +457,15 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 6: PIPELINE, FALLBACK & TOP_K (10 ĐIỂM) ==================== -->
+    <!-- ==================== SLIDE 5: PIPELINE, FALLBACK & TOP_K ==================== -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2.5">
-          <span class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">06</span>
+          <span class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">05</span>
           <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Retrieval Pipeline, Fallback & Lựa Chọn Top_K</h3>
         </div>
-        <span class="text-[0.75rem] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-          Rubric: 10 Điểm
+        <span class="text-[0.75rem] font-bold text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/25">
+          Top_K=5 & Fallback 0.35
         </span>
       </div>
       <p class="text-slate-400 text-[0.8125rem]">Cân bằng Trade-off hiệu năng và cơ chế cứu trợ Fallback dựa trên Cosine Similarity gốc.</p>
@@ -588,15 +518,15 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 7: CITATION & SAFE REFUSAL (15 ĐIỂM) ==================== -->
+    <!-- ==================== SLIDE 6: CITATION & SAFE REFUSAL ==================== -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2.5">
-          <span class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">07</span>
+          <span class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">06</span>
           <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Generation Có Citation, Lost-in-the-Middle & Safe Refusal</h3>
         </div>
         <span class="text-[0.75rem] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-          Rubric: 15 Điểm
+          Grounded Generation
         </span>
       </div>
       <p class="text-slate-400 text-[0.8125rem]">Kiểm soát triệt để hiện tượng Hallucination bằng prompt grounded, đánh số trích dẫn và cơ chế từ chối an toàn.</p>
@@ -661,15 +591,15 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 8: EVALUATION & A/B BENCHMARK (10 ĐIỂM) ==================== -->
+    <!-- ==================== SLIDE 7: EVALUATION & A/B BENCHMARK ==================== -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2.5">
-          <span class="w-7 h-7 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">08</span>
+          <span class="w-7 h-7 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">07</span>
           <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Golden Dataset (15 Q&A), 4 Metrics & A/B Testing</h3>
         </div>
-        <span class="text-[0.75rem] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-          Rubric: 10 Điểm
+        <span class="text-[0.75rem] font-bold text-teal-400 bg-teal-500/10 px-2.5 py-0.5 rounded-full border border-teal-500/25">
+          15 Golden Cases & Ragas
         </span>
       </div>
       <p class="text-slate-400 text-[0.8125rem]">Đo lường định lượng trên bộ dữ liệu vàng 15 câu hỏi thực tế (`RESULT.md`), so sánh A/B giữa Dense-only và Hybrid RRF.</p>
@@ -744,15 +674,15 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 9: BONUS (+10 ĐIỂM) & KHẢ NĂNG TÁI LẬP (5 ĐIỂM) ==================== -->
+    <!-- ==================== SLIDE 8: KỸ THUẬT MỞ RỘNG & KHẢ NĂNG TÁI LẬP ==================== -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto space-y-3.5 w-full h-full overflow-y-auto px-2">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2.5">
-          <span class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">09</span>
-          <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Điểm Thưởng Bonus (+10đ) & Khả Năng Tái Lập (5đ)</h3>
+          <span class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-heading font-bold text-[0.8125rem]">08</span>
+          <h3 class="font-heading text-[1.375rem] sm:text-[1.5rem] font-bold text-white">Kỹ Thuật Mở Rộng & Khả Năng Tái Lập Đồ Án</h3>
         </div>
         <span class="text-[0.75rem] font-bold text-amber-300 bg-amber-500/15 px-2.5 py-0.5 rounded-full border border-amber-500/30 font-mono">
-          Bonus: +10 / 10 Điểm
+          Advanced Engineering
         </span>
       </div>
 
@@ -760,9 +690,9 @@
         <div class="glass-card p-3.5 rounded-xl space-y-1.5 border-t-2 border-t-amber-500">
           <div class="flex justify-between items-center">
             <h4 class="font-heading font-bold text-white text-[0.8125rem] flex items-center gap-1.5">
-              <i class="fa-solid fa-arrows-to-dot text-amber-400"></i> Query Expansion & HyDE (+3đ)
+              <i class="fa-solid fa-arrows-to-dot text-amber-400"></i> Query Expansion & HyDE
             </h4>
-            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">+3 Điểm</span>
+            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">HyDE & Acronyms</span>
           </div>
           <p class="text-[0.6875rem] text-slate-300">
             Tự động mở rộng từ viết tắt chuyên ngành: <em>"ĐGNL" &rarr; "Đánh giá năng lực"</em>, <em>"SFIA"</em>. Tăng Recall <strong>+8%</strong> trên câu hỏi viết tắt.
@@ -772,9 +702,9 @@
         <div class="glass-card p-3.5 rounded-xl space-y-1.5 border-t-2 border-t-blue-500">
           <div class="flex justify-between items-center">
             <h4 class="font-heading font-bold text-white text-[0.8125rem] flex items-center gap-1.5">
-              <i class="fa-solid fa-code-compare text-blue-400"></i> Reranker Nâng Cao vs RRF (+3đ)
+              <i class="fa-solid fa-code-compare text-blue-400"></i> Cross-Encoder Reranker vs RRF
             </h4>
-            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">+3 Điểm</span>
+            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">Benchmark</span>
           </div>
           <p class="text-[0.6875rem] text-slate-300">
             So sánh thực nghiệm Cross-Encoder (`bge-reranker`) với RRF: Cross-Encoder latency tới <strong>120ms</strong>, trong khi RRF chỉ <strong>18ms</strong> (Nhanh gấp 6.6 lần).
@@ -784,9 +714,9 @@
         <div class="glass-card p-3.5 rounded-xl space-y-1.5 border-t-2 border-t-purple-500">
           <div class="flex justify-between items-center">
             <h4 class="font-heading font-bold text-white text-[0.8125rem] flex items-center gap-1.5">
-              <i class="fa-solid fa-clock-rotate-left text-purple-400"></i> Multi-turn Memory (+2đ)
+              <i class="fa-solid fa-clock-rotate-left text-purple-400"></i> Multi-turn Memory
             </h4>
-            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">+2 Điểm</span>
+            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">Context Session</span>
           </div>
           <p class="text-[0.6875rem] text-slate-300">
             Duy trì ngữ cảnh phiên hỏi đáp, giải quyết triệt để đại từ chỉ định thay thế ("điều kiện đó là gì?", "học bổng này áp dụng cho ai?").
@@ -796,9 +726,9 @@
         <div class="glass-card p-3.5 rounded-xl space-y-1.5 border-t-2 border-t-emerald-500">
           <div class="flex justify-between items-center">
             <h4 class="font-heading font-bold text-white text-[0.8125rem] flex items-center gap-1.5">
-              <i class="fa-solid fa-highlighter text-emerald-400"></i> UI Citation Highlighting (+2đ)
+              <i class="fa-solid fa-highlighter text-emerald-400"></i> UI Citation Highlighting
             </h4>
-            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">+2 Điểm</span>
+            <span class="text-[0.625rem] font-mono text-amber-300 font-bold bg-amber-500/10 px-1.5 py-0.5 rounded">Interactive UI</span>
           </div>
           <p class="text-[0.6875rem] text-slate-300">
             Giao diện Live Demo 2 cột: Click vào tag trích dẫn <code>[1]</code> trên khung chat sẽ highlight trực tiếp nguồn tài liệu bên cột AI trace!
@@ -809,7 +739,7 @@
       <!-- Reproducibility & 3 Individual Reports Card -->
       <div class="glass-card p-3 rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between text-[0.75rem] border-l-4 border-l-emerald-500 gap-2">
         <div>
-          <strong class="text-white">Lệnh Chạy Lại Độc Lập 1 Dòng (Khung điểm 5đ):</strong>
+          <strong class="text-white">Lệnh Chạy Lại Tái Lập Độc Lập 1 Dòng:</strong>
           <div class="font-mono text-emerald-400 text-[0.75rem] mt-0.5">pip install -r requirements.txt && pytest -v</div>
           <div class="text-[0.6875rem] text-slate-400 mt-0.5">Kết quả: 20/20 Test Passed (15 Contract Tests + 5 Acceptance Tests)</div>
         </div>
@@ -824,7 +754,7 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 10: LIVE DEMO 2 CỘT (THEO YÊU CẦU ĐẶC BIỆT) ==================== -->
+    <!-- ==================== SLIDE 9: LIVE DEMO 2 CỘT (THEO YÊU CẦU ĐẶC BIỆT) ==================== -->
     <section class="slide flex-col max-w-7xl mx-auto w-full h-full overflow-hidden px-1">
       <!-- Demo Header -->
       <div class="flex items-center justify-between pb-1.5 border-b border-slate-800 shrink-0">
@@ -832,7 +762,7 @@
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
           <h3 class="font-heading font-bold text-[0.9375rem] text-white">Live Demo: Khung Chatbot & Visual AI Pipeline Flow (2 Cột)</h3>
           <span class="text-[0.6875rem] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/25">
-            Rubric: 10đ Demo + 2đ UI Citation
+            Interactive Architecture
           </span>
         </div>
         <div class="flex items-center gap-2 text-[0.6875rem]">
@@ -996,7 +926,7 @@
       </div>
     </section>
 
-    <!-- ==================== SLIDE 11: TRANG CẢM ƠN (THEO YÊU CẦU ĐẶC BIỆT) ==================== -->
+    <!-- ==================== SLIDE 10: TRANG CẢM ƠN (THEO YÊU CẦU ĐẶC BIỆT) ==================== -->
     <section class="slide flex-col justify-center items-center text-center max-w-4xl mx-auto space-y-5 h-full overflow-y-auto px-2">
       <div class="w-16 h-16 rounded-3xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-2xl shadow-2xl shadow-blue-500/30">
         <i class="fa-solid fa-heart"></i>
@@ -1040,7 +970,7 @@
           <div class="text-slate-400">
             GitHub Repository: <a href="https://github.com/Dokhacgiakhoa/K4-L3A-RAG-Pipeline-Vinonymus" target="_blank" class="text-blue-400 font-mono underline hover:text-blue-300">K4-L3A-RAG-Pipeline-Vinonymus</a>
           </div>
-          <button onclick="goToSlide(9)" class="px-4 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold shadow-md shadow-blue-500/20 transition flex items-center gap-1.5">
+          <button onclick="goToSlide(8)" class="px-4 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold shadow-md shadow-blue-500/20 transition flex items-center gap-1.5">
             <i class="fa-solid fa-play text-xs"></i> Trở Về Màn Hình Live Demo
           </button>
         </div>
