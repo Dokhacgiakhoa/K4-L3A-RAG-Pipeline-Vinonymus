@@ -5,7 +5,7 @@
 - Họ và tên: Đỗ Khắc Gia Khoa
 - Mã học viên: 02733
 - Nhóm: Vinonymus / K4-Day08-RAG
-- Repository/branch: `main`
+- Repository/branch: `https://github.com/Dokhacgiakhoa/K4-L3A-RAG-Pipeline-Vinonymus` (branch `main`)
 
 ## Phần việc đã thực hiện
 
