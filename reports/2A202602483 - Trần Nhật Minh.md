@@ -12,10 +12,10 @@ Giới hạn khuyến nghị: 1 trang, không chép lại README hoặc mô tả
 
 ## Thông tin
 
-- Họ và tên:
-- Mã học viên:
-- Nhóm:
-- Repository/branch:
+- Họ và tên: Trần Nhật Minh
+- Mã học viên: 2A202602483
+- Nhóm:Vinonymus
+- Repository/branch:https://github.com/Dokhacgiakhoa/K4-L3A-RAG-Pipeline-Vinonymus/tree/minh
 
 ## Phần việc đã thực hiện
 
@@ -52,5 +52,5 @@ Mô tả tối đa hai quyết định mà bạn trực tiếp tham gia:
 
 Tôi xác nhận nội dung trên phản ánh đúng phần việc của mình và có thể giải thích hoặc chạy lại trong buổi demo.
 
-- Ngày:
-- Tên thành viên:
+- Ngày:20/09/2026
+- Tên thành viên: Trần Nhật Minh
